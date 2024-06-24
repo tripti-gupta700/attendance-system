@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>year</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 1500px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .container h2{
+            color: black;
+            font-size: 30px;
+            margin-bottom: 0px;
+        }
+        .container h1{
+            color: #06f;
+            margin-top: 0px;
+            margin-bottom: 30px;
+            font-size: 50px;
+        }
+        input{
+            width: 500px;
+            border:1px solid #0066FF;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #b4cff7;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        button{
+            width: 250px;
+            display: flex;
+            height: 190px;
+            color: #0066FF;
+            font-style: bold;
+            padding: 25px 100px ;
+            font-size: 30px;
+            margin: 20px 0px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            border: 2px solid lightgray;
+            background-color: white;
+        }
+        button:hover{
+            box-shadow: 5px 5px 5px 5px #0066FF;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+
+        #back{
+            width: 400px;
+            height: 100px;
+            display: flex;
+            color: #0066FF;
+            font-size: 20px;
+            padding: 7px 50px ;
+            margin: 50px 0px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            background-color: white;
+        }
+        #Next{
+            width: 400px;
+            height: 100px;
+            display: flex;
+            color: white;
+            font-size: 20px;
+            padding: 7px 50px ;
+            margin: 50px 0px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            background-color: #0066FF;
+        }
+        #Next:hover{
+            box-shadow: 5px 5px 5px 5px #76aaf8;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>SELECT&nbsp;&nbsp; YOUR</h2>
+        <h1>YEAR</h1>
+        <input type="text" placeholder="search by code or name">
+        <div class="grid">
+            <button class="year">1 <sup>st</sup> &nbsp;year</button>
+            <button class="year">2 <sup>nd</sup> &nbsp;year</button>
+            <button class="year">3 <sup>rd</sup> &nbsp;year</button>
+            <button class="year">4 <sup>th</sup> &nbsp;year</button>
+            
+        </div>
+        <div class="main">
+            <button id="back"  onclick="window.open('index4.html','self')">Back</button>
+            <button id="Next"  onclick="window.open('index6.html' , 'self')">Next</button>
+        </div>
+        
+</body>
+</html>
